@@ -16,8 +16,8 @@
         <Image x:Name="lightOn" Grid.Row="0" HorizontalAlignment="Center" Height="239" Width="320" Source="ms-appx:///Assets/light-on.png" />
         <Image x:Name="lightOff" Grid.Row="0" HorizontalAlignment="Center" Height="239" Width="320" Source="ms-appx:///Assets/light-off.png" />
 
-        <StackPanel x:Name="switchPanel" Grid.Row="1" HorizontalAlignment="Center" Width="320">
-        </StackPanel>
+        <VariableSizedWrapGrid x:Name="switchPanel" MaximumRowsOrColumns="100" Grid.Row="1" HorizontalAlignment="Center">
+        </VariableSizedWrapGrid>
 
     </Grid>
 </Page>

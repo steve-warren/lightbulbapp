@@ -25,7 +25,7 @@ namespace App1
     public sealed partial class MainPage : Page
     {
         LightBulb light = new LightBulb();
-        LightSwitch[] switches = new LightSwitch[4];
+        LightSwitch[] switches = new LightSwitch[1];
 
         public MainPage()
         {
@@ -83,44 +83,10 @@ namespace App1
         }
 
         private void SwitchChanged(object sender, RoutedEventArgs e) => TurnLightOnOrOff();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
         private void TurnLightOnOrOff()
         {
-            var switchA = switches[0];
-            var switchB = switches[1];
-            var switchC = switches[2];
-            var switchD = switches[3];
-            // light
-            if ( Xor( Xor(switchA.IsUp(), switchB.IsUp()), Xor(switchC.IsUp(), switchD.IsUp()) ) )
-            {
-                light.On(); 
-            }
-            else
-            {
-                light.Off();
-            }
+            
         }
     }
 }
